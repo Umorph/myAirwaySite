@@ -10,26 +10,32 @@
 <body>
   <header class="header">
     <picture class="header__logo">
-      <source media="(min-width: 1024px)" srcset="img/logo-big.png">
-      <img class="header__logo-image" src="img/logo-small.png" alt="Логотип «My Airway»">
+      <source media="(min-width: 1024px)" srcset="img/logo-big.webp">
+      <img class="header__logo-image" src="img/logo-small.webp" alt="Логотип «My Airway»">
     </picture>
+    <button class="main-nav__burger-toggle" type="button">
+      <span class="main-nav__burger-line"></span>
+    </button>
     <nav class="header__navigation main-nav">
-      <button class="main-nav__burger-toggle" type="button"><span class="visually-hidden">Открыть/закрыть меню</span></button>
       <ul class="main-nav__list">
         <li class="main-nav__item">
-          <a class="main-nav__link" href="#">ЭлементМеню</a>
+          <a class="main-nav__link" href="#">О нас</a>
         </li>
         <li class="main-nav__item">
-          <a class="main-nav__link" href="#">ЭлементМеню</a>
+          <a class="main-nav__link" href="#">Каталог</a>
         </li>
         <li class="main-nav__item">
-          <a class="main-nav__link" href="#">ЭлементМеню</a>
+          <a class="main-nav__link" href="#">Отзывы</a>
         </li>
         <li class="main-nav__item">
-          <a class="main-nav__link" href="#">ЭлементМеню</a>
+          <a class="main-nav__link" href="#">Вопрос-ответ</a>
+        </li>
+        <li class="main-nav__item">
+          <a class="main-nav__link" href="#">Контакты</a>
         </li>
       </ul>
     </nav>
   </header>
+  <script src="js/burger.min.js"></script>
 </body>
 </html>
