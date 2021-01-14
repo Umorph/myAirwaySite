@@ -1,0 +1,52 @@
+.show-more {
+  position: relative;
+
+  box-sizing: border-box;
+  display: block;
+  margin: 0;
+  padding: 0 15px 0 0;
+
+  font-family: $lato;
+  font-weight: 900;
+  font-style: normal;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.05em;
+  color: $blueMain;
+
+  background: none;
+  border: none;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 0;
+
+    display: block;
+    width: 10px;
+    height: 10px;
+
+    background-image: url("../img/arrow.svg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    transform: translateY(-5px);
+  }
+
+  @media screen and (min-width: 768px) {
+    padding: 0 45px 0 0;
+
+    font-size: 25px;
+    line-height: 24px;
+    text-transform: uppercase;
+
+    &::after {
+      width: 25px;
+      height: 25px;
+
+      transform: translateY(-12.5px);
+    }
+  }
+}
