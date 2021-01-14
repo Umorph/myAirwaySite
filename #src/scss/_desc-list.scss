@@ -120,6 +120,42 @@
     }
   }
 
+  &--shield {
+    &::before {
+      background-image: url("../img/icon-shield.svg");
+      background-position: 0 center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+  }
+
+  &--freedom {
+    &::before {
+      background-image: url("../img/icon-freedom.svg");
+      background-position: 0 center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+  }
+
+  &--drops {
+    &::before {
+      background-image: url("../img/icon-drops.svg");
+      background-position: 0 center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+  }
+
+  &--warning {
+    &::before {
+      background-image: url("../img/icon-warning.svg");
+      background-position: 0 center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+  }
+
   @media screen and (min-width: 1024px) {
     margin: 0 0 90px;
     padding: 0 0 0 100px;
@@ -150,12 +186,6 @@
     &--self-awareness {
       &::before {
         left: -45px;
-      }
-    }
-
-    &--eye {
-      &::before {
-        left: -60px;
       }
     }
 
