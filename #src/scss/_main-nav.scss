@@ -140,8 +140,40 @@
   text-decoration: none;
   color: $blackMain;
 
+  @media screen and (max-width: 1024px) {
+    font-size: 18px;
+    line-height: 24px;
+  }
+
   @media screen and (max-width: 768px) {
     font-size: 15px;
     line-height: 25px;
   }
+}
+
+.main-nav__link span {
+  position: relative;
+}
+
+.main-nav__link span::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 0;
+
+  display: block;
+  width: 100%;
+  height: 1px;
+
+  background-color: $blackMain;
+  border-radius: 1px;
+
+  transform: scaleX(0);
+
+  @include smooth;
+}
+
+.main-nav__link:hover > span::after,
+.main-nav__link:focus > span::after {
+  transform: scaleX(1);
 }
