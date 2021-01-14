@@ -1,0 +1,114 @@
+.solution {
+  position: relative;
+
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 129px;
+    left: 69px;
+
+    display: block;
+    width: 216px;
+    height: 146px;
+
+    background-image: url("../img/solution-bg-small.png");
+    background-position: center center;
+    background-size: contain;
+    background-repeat: no-repeat;
+
+    z-index: -1;
+  }
+
+  @media screen and (min-width: 768px) {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  @media screen and (min-width: 1024px) {
+    &::after {
+      content: "";
+      position: absolute;
+      top: 594px;
+      left: 243px;
+
+      display: block;
+      width: 737px;
+      height: 296px;
+
+      background-image: url("../img/solution-bg-big.png");
+    }
+  }
+}
+
+.solution__heading {
+  margin: 0;
+  padding: 0;
+
+  font-family: $lato;
+  font-weight: 900;
+  font-style: normal;
+  font-size: 18px;
+  line-height: 22px;
+  color: $blueMain;
+
+  @media screen and (min-width: 768px) {
+    width: 100%;
+
+    font-size: 25px;
+    line-height: 30px;
+    letter-spacing: 0.05em;
+  }
+
+  @media screen and (min-width: 1024px) {
+    width: 100%;
+
+    font-size: 35px;
+    line-height: 40px;
+    letter-spacing: 0.05em;
+  }
+
+  @media screen and (min-width: 1440px) {
+    width: 100%;
+
+    font-size: 40px;
+    line-height: 48px;
+    letter-spacing: 0.05em;
+  }
+}
+
+.solution__photo {
+  margin: 50px 0 0 15px;
+
+  filter: drop-shadow(-10px 15px 25px rgba(0, 0, 0, 0.25));
+
+  @media screen and (min-width: 768px) {
+    margin: 75px 0 0 15px;
+  }
+}
+
+.solution__description-list {
+  margin: 50px 0 0;
+  padding: 0;
+
+  @media screen and (min-width: 768px) {
+    margin: 75px 0 0 200px;
+    max-width: 400px;
+  }
+
+  @media screen and (min-width: 1024px) {
+    margin: 75px 0 0 30px;
+    max-width: 600px;
+  }
+
+  @media screen and (min-width: 1440px) {
+    margin: 75px 0 0 130px;
+    max-width: 900px;
+  }
+}

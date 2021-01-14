@@ -93,6 +93,33 @@
     }
   }
 
+  &--water {
+    &::before {
+      background-image: url("../img/icon-water.svg");
+      background-position: 0 center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+  }
+
+  &--award {
+    &::before {
+      background-image: url("../img/icon-award.svg");
+      background-position: 0 center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+  }
+
+  &--charity {
+    &::before {
+      background-image: url("../img/icon-charity.svg");
+      background-position: 0 center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+  }
+
   @media screen and (min-width: 1024px) {
     margin: 0 0 90px;
     padding: 0 0 0 100px;
