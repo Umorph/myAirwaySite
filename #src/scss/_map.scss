@@ -5,8 +5,6 @@
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
-
-  @include outline(red);
 }
 
 .map__heading {
