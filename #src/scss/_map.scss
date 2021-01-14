@@ -1,0 +1,117 @@
+.map {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+
+  @include outline(red);
+}
+
+.map__heading {
+  margin: 0;
+  padding: 0;
+
+  font-family: $lato;
+  font-weight: 900;
+  font-style: normal;
+  font-size: 18px;
+  line-height: 22px;
+  color: $blueMain;
+
+  @media screen and (min-width: 768px) {
+    font-size: 35px;
+    line-height: 42px;
+  }
+}
+
+.map__hint {
+  margin: 10px 0 0;
+  padding: 0;
+
+  font-family: $lato;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 12px;
+  line-height: 30px;
+  color: $blackMain;
+
+  @media screen and (min-width: 768px) {
+    font-size: 25px;
+    line-height: 30px;
+  }
+}
+
+.map__form {
+  margin: 20px 0 0;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+}
+
+.map__input {
+  box-sizing: border-box;
+  margin: 0 15px 15px 0;
+  padding: 5px 10px;
+  width: 220px;
+
+  font-family: $lato;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.05em;
+  color: $blackMain;
+
+  border: 1px solid #212121;
+  border-radius: 50px;
+  opacity: 0.5;
+
+  @include smooth;
+
+  &:hover,
+  &:focus {
+    border-color: #000;
+  }
+
+  @media screen and (min-width: 768px) {
+    padding: 10px 13px;
+    width: 450px;
+
+    font-size: 20px;
+    line-height: 24px;
+  }
+}
+
+.map__button {
+  display: block;
+  box-sizing: border-box;
+  margin: 0 0 20px;
+  padding: 5px 10px;
+  min-width: 300px;
+
+  font-family: $lato;
+  font-weight: 900;
+  font-style: normal;
+  font-size: 12px;
+  line-height: 24px;
+  color: $blackMain;
+
+  background: none;
+  background: $yellowMain;
+  border: none;
+  border-radius: 50px;
+
+  cursor: pointer;
+
+  @media screen and (min-width: 768px) {
+    padding: 10px 13px;
+    font-size: 20px;
+    line-height: 24px;
+  }
+}
