@@ -6,13 +6,45 @@
 
 .catalog__list {
   margin: 0;
-  padding: 0;
+  padding: 25px 0 0;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
+  height: 460px;
 
   list-style: none;
+
+  overflow-y: hidden;
+
+  @include smooth;
+
+  @media screen and (min-width: 768px) {
+    padding: 30px 0 0;
+    height: 550px;
+
+    &--opened {
+      height: auto;
+      overflow: visible;
+    }
+  }
+  @media screen and (min-width: 1024px) {
+    padding: 40px 0 0;
+  }
+  @media screen and (min-width: 1440px) {
+    padding: 50px 0 0;
+    height: 600px;
+
+    &--opened {
+      height: auto;
+      overflow: visible;
+    }
+  }
+
+  &--opened {
+    height: auto;
+    overflow: visible;
+  }
 }
 
 .catalog__item {

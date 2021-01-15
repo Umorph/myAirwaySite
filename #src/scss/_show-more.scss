@@ -17,6 +17,10 @@
   background: none;
   border: none;
 
+  cursor: pointer;
+
+  @include smooth;
+
   &::after {
     content: "";
     position: absolute;
@@ -32,7 +36,15 @@
     background-repeat: no-repeat;
     background-size: contain;
 
-    transform: translateY(-5px);
+    transform: translateY(-5px) scale(1);
+
+    @include smooth;
+  }
+
+  &--opened {
+    &::after {
+      transform: translateY(-5px) scale(1, -1);
+    }
   }
 
   @media screen and (min-width: 768px) {
@@ -46,7 +58,13 @@
       width: 25px;
       height: 25px;
 
-      transform: translateY(-12.5px);
+      transform: translateY(-12.5px) scale(1);
+    }
+
+    &--opened {
+      &::after {
+        transform: translateY(-12.5px) scale(1, -1);
+      }
     }
   }
 }
