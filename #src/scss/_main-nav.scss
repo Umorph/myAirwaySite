@@ -107,6 +107,8 @@
 
   list-style: none;
 
+  background-color: $trueWhite;
+
   @media screen and (max-width: 768px) {
     display: flex;
     flex-direction: column;
