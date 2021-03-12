@@ -189,9 +189,15 @@
       }
     }
 
+    &--eye {
+      &::before {
+        left: -65px;
+      }
+    }
+
     &--ok {
       &::before {
-        left: -75px;
+        left: -90px;
       }
     }
   }

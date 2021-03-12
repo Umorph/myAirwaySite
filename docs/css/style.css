@@ -2186,8 +2186,12 @@ input:focus {
     left: -45px;
   }
 
+  .desc-list__elem--eye::before {
+    left: -65px;
+  }
+
   .desc-list__elem--ok::before {
-    left: -75px;
+    left: -90px;
   }
 
   .contact-lenses__description {
